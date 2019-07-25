@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="style.css">
         
         <style>
-            .container{
+            body {
                /* background-image: url(bgImg.jpg);*/
                 /* Set a specific height 
 			    height: 500px; */
@@ -21,6 +21,37 @@
 			    background-repeat: no-repeat;
 			    background-size: cover;*/
 			    background-color: #0b437d;	/* dark blue */
+			    overflow-y: hidden;
+            }
+
+            .container, .row{
+            	width: 100%;
+            	height: 100%;
+            }
+
+            .left, .right{
+            	margin-top: 8%;
+            	margin-bottom: 8%;
+            }
+
+            .skills{
+            	text-align: center;
+            	vertical-align: middle !important;
+            	margin: auto;
+            }
+
+            #skills{
+            	list-style: none;
+            	color: #fff;
+            }
+
+            .line{
+            	background-color:#E49A91;
+            	position: absolute;
+			    top:0;
+			    bottom:0;
+			    left: 50%;
+			    width: 10px;
             }
         </style>
     </head>
@@ -28,7 +59,7 @@
     <body>
         
         <!-- navigation -->
-       <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">LOGO HERE</a>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,7 +68,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -47,13 +78,31 @@
                     </li>
                 </ul>
             </div>
-        </nav>    -->  <!-- ./end navigation -->
+        </nav>      <!-- ./end navigation -->
         
         <!-- content -->
-        <div class="container">
-            <div class="content">
-                <h1>hi</h1>
-            </div>
+        <div class="container-fluid">
+        	<div class="row">
+        		<div class="col-lg-2">
+        		</div>
+        		<div class="col-lg-3 left">
+        			<img class="img-fluid" src="https://via.placeholder.com/300x400">
+        		</div>
+        		<div class="col-lg-2">
+        			<div class="line"></div>
+        		</div>
+        		<div class="col-lg-3 right">
+        			<div class="skills">
+        				<ul id="skills">
+        					<li>Web Developer</li>
+        					<li>Graphic Designer</li>
+        					<li>Software Engineer</li>
+        				</ul>
+        			</div>
+        		</div>
+        		<div class="col-lg-2">
+        		</div>
+        	</div>
         </div>
     </body>
 </html>

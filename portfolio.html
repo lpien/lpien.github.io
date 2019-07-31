@@ -10,26 +10,10 @@
         <link rel="stylesheet" href="style.css">
         
         <style>
-            body {
-               /* background-image: url(bgImg.jpg);*/
-                /* Set a specific height 
-			    height: 500px; */
-
-			    /* Create the parallax scrolling effect */
-			   /* background-attachment: fixed;
-			    background-position: center;
-			    background-repeat: no-repeat;
-			    background-size: cover;*/
-			    background-color: #0b437d;	/* dark blue */
-            }
-
-            .container, .row{
-            	width: 100%;
-            	height: 100%;
-            }
 
             .searchBar{
                 margin-top: 5%;
+                margin-bottom: 5%;
             }
         </style>
     </head>
@@ -59,55 +43,56 @@
         </nav>      <!-- ./end navigation -->
         
         <!-- content -->
-        <div class="container-fluid">
-        	<div class="input-group searchBar">
-                <input type="text" class="form-control" placeholder="Search By Project Type">
-                <div class="input-group-append">
-                    <span class="input-group-text">Search</span>
-                </div>
-
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Filter By
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Project Name</a>
-                        <a class="dropdown-item" href="#">Date</a>
+        <div class="container">
+            <div class="row">
+            	<div class="input-group searchBar">
+                    <input type="text" class="form-control" placeholder="Search By Project Name, Type, or Keyword">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">Search</button>
                     </div>
                 </div>
+                    <!--<div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Filter By
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Project Name</a>
+                            <a class="dropdown-item" href="#">Date</a>
+                        </div>
+                    </div>-->
+            </div>
 
-                <div class="row">
+            <div class="row">
 
-                    <div class="col-md-4 project">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://via.placeholder.com/150">
-                            <div class="card-body">
-                                <h4 class="card-title">Project Name</h4>
-                                <p class="card-text">Project Description</p>
-                                <p class="cardTags">Project Tags</p>
-                            </div>
+                <div class="col-md-4 project">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150">
+                        <div class="card-body">
+                            <h4 class="card-title">Project Name</h4>
+                            <p class="card-text">Project Description</p>
+                            <p class="cardTags">Project Tags</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://via.placeholder.com/150">
-                            <div class="card-body">
-                                <h4 class="card-title">Project Name</h4>
-                                <p class="card-text">Project Description</p>
-                                <p class="cardTags">Project Tags</p>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150">
+                        <div class="card-body">
+                            <h4 class="card-title">Project Name</h4>
+                            <p class="card-text">Project Description</p>
+                            <p class="cardTags">Project Tags</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://via.placeholder.com/150">
-                            <div class="card-body">
-                                <h4 class="card-title">Project Name</h4>
-                                <p class="card-text">Project Description</p>
-                                <p class="cardTags">Project Tags</p>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150">
+                        <div class="card-body">
+                            <h4 class="card-title">Project Name</h4>
+                            <p class="card-text">Project Description</p>
+                            <p class="cardTags">Project Tags</p>
                         </div>
                     </div>
                 </div>

@@ -4,7 +4,23 @@ body {
 }
 
 .navbar {
-	background-color: #0e243c !important; 
+	background-color: #0e243c !important;		/* dark blue */
+}
+
+.navbar-brand, .nav-link{
+	color: #fff;
+}
+
+a.nav-link:hover{
+	border-bottom: 2px solid #E49A91;		/* pink */
+}
+
+.active{
+	border-bottom: 2px solid #E49A91;		/* pink */
+}
+
+a:hover{
+	color: #fff;
 }
 
 #header{

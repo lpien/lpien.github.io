@@ -9,21 +9,24 @@ body {
 
 .navbar-brand, .nav-link{
 	color: #fff;
+	font-family: 'Oxygen', Sans-Serif;
 }
 
 a.nav-link:hover{
 	border-bottom: 2px solid #E49A91;		/* pink */
+	color: #fff;
+	cursor: pointer;
 }
 
 .active{
 	border-bottom: 2px solid #E49A91;		/* pink */
 }
 
-a:hover{
-	color: #fff;
-}
-
 #header{
 	margin-top: 5%;
 	margin-bottom: 5%;
+}
+
+.form-control{
+	font-family: 'Noto Serif', Serif;
 }

@@ -27,6 +27,8 @@
             var url = 'projects.json';
             $.getJSON(url, function(json){
                 console.log(json);
+                var textedJson = JSON.stringify(json, undefined, 4);
+                $('#test').text(textedJson);
                 /*for(var i = 0; i < j.length; i++){
                     console.log(i + " iteration through for loop");
                     var obj = j[i];

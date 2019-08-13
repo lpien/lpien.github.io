@@ -27,7 +27,8 @@
             console.log("one");
             //xhr.open("GET", "projects.json", true);
             //console.log("two");
-            $.getJSON("https://lpien.github.io/projects.json", function(json){
+            var url = 'projects.json';
+            $.getJSON(url, function(json){
                 console.log("2");
                 console.log(json);
             });

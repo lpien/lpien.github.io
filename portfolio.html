@@ -27,7 +27,7 @@
             console.log("one");
             xhr.open("GET", "projects.json", true);
             console.log("two");
-            $.getJSON("/projects.json", function(json){
+            $.getJSON("projects.json", function(json){
                 console.log("2");
                 console.log(json);
             });

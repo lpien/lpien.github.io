@@ -25,7 +25,11 @@
         $(function(){
             var xhr = new XMLHttpRequest();
             xhr.open("GET", "projects.json", true);
-            xhr.onreadystatechange = function(){
+            $.getJSON("/projects.json", function(json){
+                console.log("2");
+                console.log(json);
+            });
+            /*xhr.onreadystatechange = function(){
                 if(xhr.readyState == 4){
                     console.log("1");
                     $.getJSON("/projects.json", function(json){
@@ -38,7 +42,7 @@
                         console.log("projects");
                         console.log(JSON.stringify(data));
 
-                    });*/
+                    });
 
                 }
                 else{
@@ -46,7 +50,7 @@
                 }
             }
 
-            xhr.send();
+            xhr.send();*/
             /*
             var projects = [];
 

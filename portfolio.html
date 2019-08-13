@@ -24,12 +24,12 @@
     <script>
         $(function(){
             var xhr = new XMLHttpRequest();
-            console.log("one");
             var url = 'projects.json';
             $.getJSON(url, function(json){
                 console.log(json);
                 var j = json;
                 for(var i = 0; i < json.length; i++){
+                    console.log(i + " iteration through for loop");
                     var obj = j[i];
                     console.log("proj name = " + obj.name);
                 }

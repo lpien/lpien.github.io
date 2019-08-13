@@ -27,13 +27,18 @@
             xhr.open("GET", "projects.json", true);
             xhr.onreadystatechange = function(){
                 if(xhr.readyState == 4){
-                    console.log("works");
-                    //var projects = JSON.parse('projects.json');
+                    console.log("1");
+                    $.getJSON("projects.json", function(json){
+                        console.log("2");
+                        console.log(json);
+                    });
+                    console.log("3");
+                    /*var projects = JSON.parse('projects.json');
                     $.getJSON('projects.json', function(data){
                         console.log("projects");
                         console.log(JSON.stringify(data));
 
-                    });
+                    });*/
 
                 }
                 else{

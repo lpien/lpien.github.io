@@ -25,9 +25,9 @@
         $(function(){
             var xhr = new XMLHttpRequest();
             console.log("one");
-            xhr.open("GET", "projects.json", true);
-            console.log("two");
-            $.getJSON("projects.json", function(json){
+            //xhr.open("GET", "projects.json", true);
+            //console.log("two");
+            $.getJSON("https://lpien.github.io/projects.json", function(json){
                 console.log("2");
                 console.log(json);
             });

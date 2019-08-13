@@ -24,7 +24,9 @@
     <script>
         $(function(){
             var xhr = new XMLHttpRequest();
+            console.log("one");
             xhr.open("GET", "projects.json", true);
+            console.log("two");
             $.getJSON("/projects.json", function(json){
                 console.log("2");
                 console.log(json);
@@ -57,6 +59,7 @@
             $.getJSON('projects.json', function(data){
                 console.log("true");
             });*/
+            console.log("three");
         });
     </script>
     

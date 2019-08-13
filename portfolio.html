@@ -26,9 +26,9 @@
             var xhr = new XMLHttpRequest();
             var url = 'projects.json';
             $.getJSON(url, function(json){
-                console.log(json);
                 var j = json;
-                for(var i = 0; i < json.length; i++){
+
+                for(var i = 0; i < j.length; i++){
                     console.log(i + " iteration through for loop");
                     var obj = j[i];
                     console.log("proj name = " + obj.name);
@@ -82,6 +82,9 @@
 
             <!-- projects -->
             <div class="row">
+                <p id="test" style="color:white;">
+                    
+                </p>
 
                 <!--<div class="col-md-4 project">
                     <div class="card" style="width: 18rem;">

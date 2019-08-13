@@ -12,6 +12,8 @@
         
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
 
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
         <style>
             body{
                 font-family: 'Noto Serif', Serif;
@@ -26,6 +28,12 @@
             xhr.onreadystatechange = function(){
                 if(xhr.readyState == 4){
                     console.log("works");
+                    //var projects = JSON.parse('projects.json');
+                    $.getJSON('projects.json', function(data){
+                        console.log(projects);
+                        console.log(JSON.stringify(data));
+                    });
+
                 }
                 else{
                     console.log("fail");
@@ -85,6 +93,7 @@
                     </div>-->
             </div>
 
+            <!-- projects -->
             <div class="row">
 
                 <div class="col-md-4 project">
@@ -119,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>      <!-- ./ end projects -->
         </div>
 
     </body>

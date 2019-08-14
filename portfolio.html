@@ -27,8 +27,7 @@
             var url = 'projects.json';
             $.getJSON(url, function(json){
                 //console.log(json);
-                var j = json;
-                console.log(j);
+                var j = json[0];
                 var textedJson = JSON.stringify(j, undefined, 4);
 
                 /*for(var i = 0; i < j.length; i++){

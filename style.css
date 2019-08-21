@@ -1,6 +1,5 @@
 body {
     background-color: #0e243c;	/* dark blue */
-    overflow-y: hidden;
 }
 
 .navbar {
@@ -16,6 +15,10 @@ a.nav-link:hover{
 	border-bottom: 2px solid #E49A91;		/* pink */
 	color: #fff;
 	cursor: pointer;
+}
+
+#brand{
+	width: 80;
 }
 
 .active{

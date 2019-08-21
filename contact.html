@@ -15,6 +15,9 @@
             /*.contactForm{
                 background-color: #ececec;
             }*/
+            body {
+                overflow-y: hidden;
+            }
 
             h2{
                 text-align: center;
@@ -23,6 +26,11 @@
 
             p{
                 color: #fff;
+            }
+
+            .icons{
+                width: 30;
+                display: inline;
             }
 
             /*
@@ -39,7 +47,7 @@
         <!-- navigation -->
         <nav class="navbar navbar-inverse navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">LOGO PLACEHOLDER</a>
+                <a class="navbar-brand" href="index.html"><img id="brand" src="LP_logo_pink.png"></a>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
@@ -47,9 +55,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item active">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
@@ -82,10 +90,18 @@
                     <div class="row">
                         <p>Or find me on the internet!</p>
                     </div>
-                    <p>Github<span class="glyphicon glyphicon-envelope"></span></p>
-                    <p>LinkedIn<span class="glyphicon glyphicon-envelope"></span></p>
-                    <p>Spotify<span class="glyphicon glyphicon-envelope"></span></p>
-                    <p>Instagram<span class="glyphicon glyphicon-envelope"></span></p>
+                    <div class="row">
+                        <p><img class="icons" src="github.png">Github</p>
+                    </div>
+                    <div class="row">
+                        <p><img class="icons" src="github.png">LinkedIn</p>
+                    </div>
+                    <div class="row">
+                        <p><img class="icons" src="github.png">Spotify</p>
+                    </div>
+                    <div class="row">
+                        <p><img class="icons" src="github.png">Instagram</p>
+                    </div>
                 </div>
         	</div>
         </div>

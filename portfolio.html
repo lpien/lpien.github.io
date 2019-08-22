@@ -14,6 +14,9 @@
 
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
+        <!-- favicon -->
+        <link rel="icon" href="LP_logo_pink.png">
+
         <style>
             body{
                 font-family: 'Noto Serif', Serif;
@@ -87,45 +90,99 @@
             </div>-->
 
             <!-- projects -->
+            <!-- row 1 -->
             <div class="row">
-                <p id="test" style="color:white;">
-                    
-                </p>
-
                 <div class="col-md-4 project">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#surveModal">
                         <img class="card-img-top" src="https://via.placeholder.com/150">
                         <div class="card-body">
                             <h4 class="card-title">Surve</h4>
-                            <p class="card-text">Surve is a mobile app thatconnects you with local restaurants to reduce the waste of surplus food. You not only help the environment, but also get food at a discounted rate from local restaurants across Rochester, NY.</p>
-                            <p class="cardTags">Project Tags</p>
+                            <!--<p class="card-text">Surve is a mobile app thatconnects you with local restaurants to reduce the waste of surplus food. You not only help the environment, but also get food at a discounted rate from local restaurants across Rochester, NY.</p>
+                            <p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#urwicModal">
                         <img class="card-img-top" src="https://via.placeholder.com/150">
                         <div class="card-body">
-                            <h4 class="card-title">Project Name</h4>
-                            <p class="card-text">Project Description</p>
-                            <p class="cardTags">Project Tags</p>
+                            <h4 class="card-title">URWIC</h4>
+                            <!-- <p class="card-text">Project Description</p>
+                            <p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#moodModal">
                         <img class="card-img-top" src="https://via.placeholder.com/150">
                         <div class="card-body">
-                            <h4 class="card-title">Project Name</h4>
-                            <p class="card-text">Project Description</p>
-                            <p class="cardTags">Project Tags</p>
+                            <h4 class="card-title">Mood Media FCC</h4>
+                            <!--<p class="card-text">Project Description</p>
+                            <p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
                 </div>
-            </div>      <!-- ./ end projects -->
-        </div>
+            </div>      <!-- ./ end row 1 -->
+
+            <!-- row 2 -->
+            <div class="row">
+                <div class="col-md-4 project">
+                    <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#jjModal">
+                        <img class="card-img-top" src="https://via.placeholder.com/150">
+                        <div class="card-body">
+                            <h4 class="card-title">J & J Vending</h4>
+                            <!--<p class="card-text">Surve is a mobile app thatconnects you with local restaurants to reduce the waste of surplus food. You not only help the environment, but also get food at a discounted rate from local restaurants across Rochester, NY.</p>
+                            <p class="cardTags">Project Tags</p>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#lucasModal">
+                        <img class="card-img-top" src="https://via.placeholder.com/150">
+                        <div class="card-body">
+                            <h4 class="card-title">Lucas Sports</h4>
+                            <!-- <p class="card-text">Project Description</p>
+                            <p class="cardTags">Project Tags</p>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#boxModal">
+                        <img class="card-img-top" src="https://via.placeholder.com/150">
+                        <div class="card-body">
+                            <h4 class="card-title">Box Sync</h4>
+                            <!--<p class="card-text">Project Description</p>
+                            <p class="cardTags">Project Tags</p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>      <!-- ./ end row 2 -->
+        </div>      <!-- ./ end content -->
+
+        <!-- modal info -->
+        <div class="modal fade" id="surveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>      <!-- ./ end modal data -->
 
     </body>
 </html>

@@ -1,5 +1,6 @@
 <html>
     <head>
+    	<title>Home - Lauren Pien</title>
         
         <!-- bootstrap  -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,17 +17,30 @@
         
         <style>
         	body {
-			    overflow-y: hidden;
+			    /*overflow-y: hidden;
+			    background-image: url('img/bg.jpg');
+			    background-size: cover;
+			    background-repeat: no-repeat;*/
 			}
+
+			#backgroundImage{
+				background-image: url('img/bg.jpg');
+			    background-size: cover;
+			    background-repeat: no-repeat;
+			    height: 100%;
+			    background-attachment: fixed;
+				background-position: center;
+			}
+
             .container, .row{
             	width: 100%;
             	height: 100%;
             }
 
-            .left, .right{
+            /*.left, .right{
             	margin-top: 8%;
             	margin-bottom: 8%;
-            }
+            }*/
 
             .skills{
             	text-align: center;
@@ -40,21 +54,30 @@
             	font-family: 'Oxygen', Sans-Serif;
             }
 
-            .line{
+            h1{
+            	font-family: 'Oxygen', Sans-Serif;
+            	font-size: 4rem;
+            }
+
+            p{
+            	font-family: 'Noto Serif', Serif;
+            }
+
+            /*.line{
             	background-color:#E49A91;
             	position: absolute;
 			    top:20%;
 			    bottom:20%;
 			    left: 50%;
 			    width: 3px;
-            }
+            }*/
         </style>
     </head>
     
     <body>
         
         <!-- navigation -->
-        <nav class="navbar navbar-inverse navbar-expand-lg">
+        <nav class="navbar navbar-inverse navbar-expand-lg navbar-fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img id="brand" src="img/LP_logo_pink.png"></a>
                 <ul class="nav navbar-nav navbar-right">
@@ -76,26 +99,15 @@
         
         <!-- content -->
         <div class="container">
-        	<div class="row">
-        		<div class="col-lg-1">
+        	<div class="row" id="backgroundImage">
+        		<div class="col-lg-2">
         		</div>
-        		<div class="col-lg-4 left">
-        			<div class="skills">
-        				<ul>
-        					<li id="skills">Web Developer</li>
-        					<li id="skills">Graphic Designer</li>
-        					<li id="skills">Software Engineer</li>
-        				</ul>
-        			</div>
+        		<div class="col-lg-8" style="color: white; margin-top: 10%;">
+        			<h1>I'm Lauren</h1>
+        			<p>web developer, graphic designer, soccer coach, and avid napper</p>
         		</div>
         		<div class="col-lg-2">
-        			<div class="line"></div>
-        		</div>
-        		<div class="col-lg-4 right">
-        			<img class="img-fluid" src="https://via.placeholder.com/300x400">
-        		</div>
-        		
-        		<div class="col-lg-1">
+        			
         		</div>
         	</div>
         </div>

@@ -19,7 +19,7 @@
 
         	// text fades on scroll
         	$(window).scroll(function(){
-			    $(".titleText").css("opacity", 1 - $(window).scrollTop() / 400);
+			    $(".titleText").css("opacity", 1 - $(window).scrollTop() / 300);
 			  });
         </script>
         
@@ -46,21 +46,33 @@
 			    width: 100%;
 			    background-attachment: fixed;
 				background-position: center;
+				overflow-x: hidden;
 			}
 
 			.two{
-				height:1000px;
-				background-color:red;
+				height:700px;
+				background-color:#CADBC8;	/* green */
 				z-index: 1;
+				background-size: cover;
+				box-shadow: 10px 10px 5px grey;
+				overflow-x: hidden;
+			}
+
+			.three{
+				background-color: #F4B65C;	/* orange */
+				height:700px;
+				z-index: 2;
+				background-size: cover;
 			}
 
 			.titleText{
 				color: #fff;
-				left: 100px;
-				top: 100px;
-				font-size: 65px;
+				left: 25%;
+				top: 40%;
+				/*font-size: 65px;*/
 				position: fixed;
 				z-index: 0;
+				font-family: 'Oxygen', Sans-Serif;
 			}
 
             /*.container, .row{
@@ -71,7 +83,7 @@
             .left, .right{
             	margin-top: 8%;
             	margin-bottom: 8%;
-            }*/
+            }
 
             .skills{
             	text-align: center;
@@ -83,7 +95,7 @@
             	list-style: none;
             	color: #fff;
             	font-family: 'Oxygen', Sans-Serif;
-            }
+            }*/
 
             h1{
             	font-family: 'Oxygen', Sans-Serif;
@@ -92,6 +104,12 @@
 
             p{
             	font-family: 'Noto Serif', Serif;
+            }
+
+            .bio{
+            	margin-top: 40%;
+            	text-align: right;
+            	color: #0B437D;
             }
 
             /*.line{
@@ -131,26 +149,27 @@
         <!-- content -->
         <div class="container-fluid">
         	<div class="bg">
-        		<span class="titleText">Text</span>
+        		<span class="titleText">
+        			<h1 style="font-weight: 500;">I'm Lauren</h1>
+        			<p>web developer, graphic designer, soccer coach, and avid napper</p>
+        		</span>
         	</div>
         	<div class="two">
-        	</div>
-        	<!--<div class="row">
-        		<div class="col-lg-2"></div>
-        		<div class="col-lg-8" style="color: white; margin-top: 10%;">
-        			<h1>I'm Lauren</h1>
-        			<p>web developer, graphic designer, soccer coach, and avid napper</p>
+        		<div class="row">
+        			<div class="col-lg-2"></div>
+        			<div class="col-lg-3">
+        				<img src="img/bay.png" class="center-block" style="width: 200; margin-top: 60%;">
+        			</div>
+        			<div class="col-lg-5">
+        				<p class="bio">I went to school at the University of Rochester and double majored in Computer Science and Digital Media Studies. <br/><br/>Now I'm in the San Francisco Bay Area living the dream of being a freelance web developer and graphic designer, and coaching youth soccer</p>
+        			</div>
+        			<div class="col-lg-2"></div>
         		</div>
-        		<div class="col-lg-2"></div>
         	</div>
-
-        	<div class="row">
-	        	<div style="height:1000px;background-color:red;font-size:36px">
-					Scroll Up and Down this page to see the parallax scrolling effect.
-					This div is just here to enable scrolling.
-					Tip: Try to remove the background-attachment property to remove the scrolling effect.
-				</div>
-			</div>-->
+        	<div class="three">
+        		<div class="row">
+        		</div>
+        	</div>
         </div>
     </body>
 </html>

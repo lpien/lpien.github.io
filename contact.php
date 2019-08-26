@@ -8,6 +8,9 @@ $formContent = "From: $name, $email \n $message";
 $recipient = "lpien@u.rochester.edu";
 
 mail($recipient, $subject, $formContent) or die ("error");
+if(isset($_POST['submit'])){
+	echo "works";
+}
 echo "Thank You!";
 
 /*if($_POST["message"]) {

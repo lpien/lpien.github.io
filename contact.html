@@ -45,6 +45,15 @@
                 margin-right: 10;
             }
 
+            .form-control:focus{
+                border-color: transparent;
+                box-shadow: none;
+            }
+
+            textarea{
+                resize: none;
+            }
+
             /*
             Font-Family: 'Julius Sans One', Sans-Serif;
             Font-Size: 45px;
@@ -86,40 +95,55 @@
 
                 <!-- contact form -->
                 <div class="col-lg-7">
-                    <form class="contactForm" action="/contact.php">
+                    <form class="contactForm" action="contact.php" method="POST">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address" required>
+                            <input type="text" class="form-control" id="nameInput" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject" required>
+                            <input type="email" class="form-control" id="emailInput" name="email" placeholder="Your Email Address" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message" required></textarea>
+                            <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="messageInput" name="message" rows="3" placeholder="Message" required></textarea>
                         </div>
                         <button type="button" class="btn btn-success">Send</button>
                     </form>
                 </div>      <!-- ./ end contact form -->
-                <div class="col-lg-2"></div>
-                <div class="col-lg-3">
+                <div class="col-lg-1"></div>
+
+                <!-- social media -->
+                <div class="col-lg-4">
                     <div class="row">
-                        <p>Or find me on the internet!</p>
+                        <div class="row">
+                            <p>Or find me on the internet!</p>
+                        </div>
                     </div>
                     <div class="row">
-                        <a href="https://github.com/lpien" target="_blank"><p><img class="icons" src="img/github.png">Github</p></a>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <a href="https://github.com/lpien" target="_blank"><p><img class="icons" src="img/github.png">Github</p></a>
+                            </div>
+                            <div class="row">
+                                <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><p><img class="icons" src="img/linkedin.png">LinkedIn</p></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                        <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><p><img class="icons" src="img/linkedin.png">LinkedIn</p></a>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><p><img class="icons" src="img/spotify.png">Spotify</p></a>
+                            </div>
+                            <div class="row">
+                                <a href="https://www.instagram.com/lpien/" target="_blank"><p><img class="icons" src="img/instagram.png">Instagram</p></a>
+                            </div>
+                            <div class="row">
+                                <a href="https://twitter.com/LaurenPien" target="_blank"><p><img class="icons" src="img/twitter.png">Twitter</p></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><p><img class="icons" src="img/spotify.png">Spotify</p></a>
-                    </div>
-                    <div class="row">
-                        <a href="https://www.instagram.com/lpien/" target="_blank"><p><img class="icons" src="img/instagram.png">Instagram</p></a>
-                    </div>
-                    <div class="row">
-                        <a href="https://twitter.com/LaurenPien" target="_blank"><p><img class="icons" src="img/twitter.png">Twitter</p></a>
-                    </div>
-                </div>
+                </div>      <!-- ./ end social media -->
         	</div>
         </div>
     </body>

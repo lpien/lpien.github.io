@@ -21,7 +21,7 @@ a.nav-link:hover{
 	width: 80;
 }
 
-.active{
+li.active{
 	border-bottom: 2px solid #E49A91;		/* pink */
 }
 

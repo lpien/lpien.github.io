@@ -30,8 +30,8 @@ li.active{
 	margin-bottom: 5%;
 }
 
-.form-control{
-	font-family: 'Noto Serif', Serif;
+.card{
+	margin: 0 auto;
 }
 
 @media (min-width: 990px){
@@ -49,5 +49,6 @@ li.active{
 	    -ms-flex: 0 0 100%;
 	    flex: 0 0 100%;
 	    max-width: 100%;
+	    margin-bottom: 10px;
 	}
 }

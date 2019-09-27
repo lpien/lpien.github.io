@@ -22,6 +22,7 @@
             body{
                 font-family: 'Noto Serif', Serif;
                 background-color: #0e243c;  /* dark blue */
+                padding-top: 10%;
             }
 
             .row{
@@ -71,6 +72,40 @@
             .col-lg-2{
                 margin: 0 auto;
             }
+
+            .card-inner {
+              position: relative;
+              /*width: 100%;
+              height: 100%;*/
+              transition: transform 0.6s;
+              transform-style: preserve-3d;
+            }
+
+            .card:hover .card-inner {
+              transform: rotateY(180deg);
+              cursor: pointer;
+            }
+
+            .card-front, .card-back {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+            }
+
+            .card-front {
+              background-color: #fff;
+              color: black;
+            }
+
+            .card-back {
+              background-color: #2980b9;
+              color: white;
+              transform: rotateY(180deg);
+              text-align: center;
+            }
+
+
         </style>
     </head>
 
@@ -99,25 +134,27 @@
     <body>
         
         <!-- navigation -->
-        <nav class="navbar navbar-inverse navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img id="brand" src="img/LP_logo_pink.png"></a>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>-->
-                </ul>
+                <a class="navbar-brand" href="index.html">
+                    <img id="brand" src="img/LP_logo_pink.png">
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </nav>      <!-- ./ end navigation -->
+        </nav>     <!-- ./ end navigation -->
         
         <!-- content -->
         <div class="container">
@@ -146,10 +183,17 @@
                 <!-- surve modal -->
                 <div class="col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#surveModal">
-                        <img class="card-img-top" src="img/surve/surve4.jpg">
-                        <div class="card-body">
-                            <h4 class="card-title">Surve</h4>
-                            <!--<p class="cardTags">Project Tags</p>-->
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img class="card-img-top" src="img/surve/surve4.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Surve</h4>
+                                    <!--<p class="cardTags">Project Tags</p>-->
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <p>Surve is a mobile app that connects you with local restaurants to reduce the waste of surplus food. You not only help the environment, but also get food at a discounted rate from local restaurants across Rochester, NY.</p>
+                            </div>
                         </div>
                     </div>
                 </div>      <!-- ./ end surve modal -->
@@ -212,78 +256,28 @@
                     </div>
                 </div>
             </div>      <!-- ./end row 2 -->
+        
 
-            <!-- row 3 -->
-           <!-- <div class="row">
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#eipModal">
-                        <img class="card-img-top" src="https://via.placeholder.com/150">
-                        <div class="card-body">
-                            <h4 class="card-title">EIP Template</h4>
-                            
-                            <p class="cardTags">Project Tags</p>
-                        </div>
+            <div class="four">
+                <div class="row" style="padding-top: 10%; margin: 0 auto;">
+                    <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
+                        <a href="https://github.com/lpien" target="_blank"><img class="icons" src="img/github.png"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/linkedin.png"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/spotify.png"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/instagram.png"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/twitter.png"></a>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#boxModal">
-                        <img class="card-img-top" src="https://via.placeholder.com/150">
-                        <div class="card-body">
-                            <h4 class="card-title">Box Sync</h4>
-                            
-                            <p class="cardTags">Project Tags</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->     <!-- ./ end row 3 -->
+            </div>
         </div>      <!-- ./ end content -->
-
-        <div class="four">
-            <div class="row" style="padding-top: 10%; margin: 0 auto;">
-                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
-                    <a href="https://github.com/lpien" target="_blank"><img class="icons" src="img/github.png"></a>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/linkedin.png"></a>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/spotify.png"></a>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/instagram.png"></a>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                    <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/twitter.png"></a>
-                </div>
-            </div>
-        </div>
-
-       <!-- <div class="four">
-            <div class="row">
-                <div class="col-lg-2 col-md-1 col-sm-0"></div>
-                    <div class="col-lg-8 col-md-10 col-sm-12">
-                        <div class="row" style="padding-top: 15%; margin: 0 auto;">
-                            <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
-                                <a href="https://github.com/lpien" target="_blank"><img class="icons" src="img/github.png"></a>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2">
-                                <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/linkedin.png"></a>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2">
-                                <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/spotify.png"></a>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2">
-                                <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/instagram.png"></a>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2">
-                                <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/twitter.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                <div class="col-lg-2 col-md-1 col-sm-0"></div>
-            </div>
-        </div>-->
 
         <!-- surve modal  -->
         <div class="modal fade" id="surveModal" role="dialog" aria-hidden="true">

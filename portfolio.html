@@ -69,42 +69,13 @@
                 margin-left: auto;
             }
 
+            img:hover{
+                cursor: pointer !important;
+            }
+
             .col-lg-2{
                 margin: 0 auto;
             }
-
-            .card-inner {
-              position: relative;
-              /*width: 100%;
-              height: 100%;*/
-              transition: transform 0.6s;
-              transform-style: preserve-3d;
-            }
-
-            .card:hover .card-inner {
-              transform: rotateY(180deg);
-              cursor: pointer;
-            }
-
-            .card-front, .card-back {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              backface-visibility: hidden;
-            }
-
-            .card-front {
-              background-color: #fff;
-              color: black;
-            }
-
-            .card-back {
-              background-color: #2980b9;
-              color: white;
-              transform: rotateY(180deg);
-              text-align: center;
-            }
-
 
         </style>
     </head>
@@ -183,17 +154,10 @@
                 <!-- surve modal -->
                 <div class="col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#surveModal">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img class="card-img-top" src="img/surve/surve4.jpg">
-                                <div class="card-body">
-                                    <h4 class="card-title">Surve</h4>
-                                    <!--<p class="cardTags">Project Tags</p>-->
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <p>Surve is a mobile app that connects you with local restaurants to reduce the waste of surplus food. You not only help the environment, but also get food at a discounted rate from local restaurants across Rochester, NY.</p>
-                            </div>
+                        <img class="card-img-top" src="img/surve/surve4.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Surve</h4>
+                            <!--<p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
                 </div>      <!-- ./ end surve modal -->
@@ -224,6 +188,8 @@
                 
             <!-- row 2 -->
             <div class="row">
+
+                <!-- mood modal -->
                 <div class="col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#moodModal">
                         <img class="card-img-top" src="img/moodLogo.png">
@@ -233,8 +199,9 @@
                             <p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
-                </div>
+                </div>      <!-- ./ end mood modal -->
             
+                <!-- JJ modal -->
                 <div class="col-md-4 project col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#jjModal">
                         <img class="card-img-top" src="img/jj/jjLogo.jpeg">
@@ -243,43 +210,47 @@
                             <!--<p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
-                </div>
+                </div>      <!-- ./ end JJ modal -->
 
                 <div class="col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#lucasModal">
                         <img class="card-img-top" src="img/lucas/lucasLogo.jpg">
                         <div class="card-body">
                             <h4 class="card-title">Lucas Sports</h4>
-                            <!-- <p class="card-text">Project Description</p>
-                            <p class="cardTags">Project Tags</p>-->
+                            <!--<p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
                 </div>
             </div>      <!-- ./end row 2 -->
         
-
-            <div class="four">
-                <div class="row" style="padding-top: 10%; margin: 0 auto;">
-                    <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
-                        <a href="https://github.com/lpien" target="_blank"><img class="icons" src="img/github.png"></a>
+            <!-- social media footer -->
+            <footer class="footer mt-auto">
+                <div class="four">
+                    <div class="row" style="padding-top: 10%; margin: 0 auto;">
+                        <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
+                            <a href="https://github.com/lpien" target="_blank"><img class="icons" id="github" src="img/github.png" onmouseover="this.src='img/github_hover.png'" onmouseout="this.src='img/github.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/linkedin.png" onmouseover="this.src='img/linkedin_hover.png'" onmouseout="this.src='img/linkedin.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/spotify.png" onmouseover="this.src='img/spotify_hover.png'" onmouseout="this.src='img/spotify.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/instagram.png" onmouseover="this.src='img/instagram_hover.png'" onmouseout="this.src='img/instagram.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/twitter.png" onmouseover="this.src='img/twitter_hover.png'" onmouseout="this.src='img/twitter.png'"></a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
-                        <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/linkedin.png"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
-                        <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/spotify.png"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
-                        <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/instagram.png"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
-                        <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/twitter.png"></a>
+                    <div class="container text-center">
+                      <small>Copyright &copy; Your Website</small>
                     </div>
                 </div>
-            </div>
+            </footer>      <!-- ./ end social media footer -->
         </div>      <!-- ./ end content -->
 
-        <!-- surve modal  -->
+        <!-- surve modal content -->
         <div class="modal fade" id="surveModal" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content modal-lg">
@@ -326,9 +297,9 @@
                     </div>
                 </div>
             </div>
-        </div>      <!-- ./ end surve modal -->
+        </div>      <!-- ./ end surve modal content -->
 
-        <!-- urwic modal  -->
+        <!-- urwic modal content -->
         <div class="modal fade" id="urwicModal" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content modal-lg">
@@ -375,9 +346,9 @@
                     </div>
                 </div>
             </div>
-        </div>      <!-- ./ end urwic modal -->
+        </div>      <!-- ./ end urwic modal content -->
 
-        <!-- merritt modal  -->
+        <!-- merritt modal content -->
         <div class="modal fade" id="merrittModal" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content modal-lg">
@@ -416,9 +387,9 @@
                     </div>
                 </div>
             </div>
-        </div>      <!-- ./ end merritt modal -->
+        </div>      <!-- ./ end merritt modal content -->
 
-        <!-- mood modal  -->
+        <!-- mood modal content -->
         <div class="modal fade" id="moodModal" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content modal-lg">
@@ -509,7 +480,7 @@
             </div>
         </div>      <!-- ./ end jj modal -->
 
-        <!-- lucas modal  -->
+        <!-- lucas modal content -->
         <div class="modal fade" id="lucasModal" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content modal-lg">
@@ -556,7 +527,7 @@
                     </div>
                 </div>
             </div>
-        </div>      <!-- ./ end lucas modal -->
+        </div>      <!-- ./ end lucas modal content -->
 
     </body>
 </html>

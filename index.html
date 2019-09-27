@@ -53,7 +53,6 @@
 				background-color:#CADBC8;	/* green */
 				z-index: 1;
 				background-size: cover;
-				box-shadow: 10px 10px 5px grey;
 				overflow-x: hidden;
 			}
 
@@ -86,6 +85,10 @@
                 display: block;
                 margin-right: auto;
                 margin-left: auto;
+            }
+
+            .icons:hover{
+                cursor: pointer !important;
             }
 
             .col-lg-2{
@@ -134,14 +137,6 @@
             	color: #0B437D;		/* blue */
             }
 
-            /*.line{
-            	background-color:#E49A91;
-            	position: absolute;
-			    top:20%;
-			    bottom:20%;
-			    left: 50%;
-			    width: 3px;
-            }*/
         </style>
     </head>
     
@@ -209,25 +204,31 @@
         			</div>
         		</div>
         	</div>-->
-        	<div class="four">
-                <div class="row" style="padding-top: 10%; margin: 0 auto;">
-                    <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
-                        <a href="https://github.com/lpien" target="_blank"><img class="icons" src="img/github.png"></a>
+        	<!-- social media footer -->
+            <footer class="footer mt-auto">
+                <div class="four">
+                    <div class="row" style="padding-top: 10%; margin: 0 auto;">
+                        <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
+                            <a href="https://github.com/lpien" target="_blank"><img class="icons" id="github" src="img/github.png" onmouseover="this.src='img/github_hover.png'" onmouseout="this.src='img/github.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/linkedin.png" onmouseover="this.src='img/linkedin_hover.png'" onmouseout="this.src='img/linkedin.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/spotify.png" onmouseover="this.src='img/spotify_hover.png'" onmouseout="this.src='img/spotify.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/instagram.png" onmouseover="this.src='img/instagram_hover.png'" onmouseout="this.src='img/instagram.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/twitter.png" onmouseover="this.src='img/twitter_hover.png'" onmouseout="this.src='img/twitter.png'"></a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
-                        <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/linkedin.png"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
-                        <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/spotify.png"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
-                        <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/instagram.png"></a>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
-                        <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/twitter.png"></a>
+                    <div class="container text-center">
+                      <small>Copyright &copy; Your Website</small>
                     </div>
                 </div>
-            </div>
+            </footer>      <!-- ./ end social media footer -->
         </div>
     </body>
 </html>

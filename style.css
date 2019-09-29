@@ -17,6 +17,10 @@ a.nav-link:hover{
 	cursor: pointer;
 }
 
+.navbar-collapse{
+	text-align: right;
+}
+
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,255,255);
 }

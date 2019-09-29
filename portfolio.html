@@ -22,15 +22,17 @@
             body{
                 font-family: 'Noto Serif', Serif;
                 background-color: #0e243c;  /* dark blue */
-                padding-top: 10%;
+                /*padding-top: 10%;*/
             }
 
-            .row{
+            .card{
+                transition: transform .2s;
                 margin-bottom: 20;
             }
 
             .card:hover{
                 cursor: pointer;
+                transform: scale(1.05);
             }
 
             @media (min-width: 576px){
@@ -77,35 +79,33 @@
                 margin: 0 auto;
             }
 
+            .form-control:focus{
+                border-color: none;
+            }
+
         </style>
     </head>
 
     <script>
-        /*$(function(){
-            var xhr = new XMLHttpRequest();
-            var url = 'projects.json';
-            $.getJSON(url, function(json){
-                //console.log(json);
-                var j = json[0];
-                var textedJson = JSON.stringify(j, undefined, 4);
-
-                /*for(var i = 0; i < j.length; i++){
-                    console.log(j[i]);
-                }
-                $('#test').text(textedJson);
-                /*for(var i = 0; i < j.length; i++){
-                    console.log(i + " iteration through for loop");
-                    var obj = j[i];
-                    console.log("proj name = " + obj.name);
-                }
+        $(function() {
+            $('#search').keyup(function (){
+                $('.card').removeClass('d-none');
+                var filter = $(this).val(); // get the value of the input, which we filter on
+                $('.container').find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().addClass('d-none');
             });
-        });*/
+
+            /*$('#btnSort').click(function (){
+                $('.card-deck .card').sort(function(a,b) {
+                    return $(a).find(".card-title").text() > $(b).find(".card-title").text() ? 1 : -1;
+                });
+            });*/
+        });
     </script>
     
     <body>
         
         <!-- navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img id="brand" src="img/LP_logo_pink.png">
@@ -129,41 +129,31 @@
         
         <!-- content -->
         <div class="container">
-            <!--<div class="row">
+            <div class="row">
             	<div class="input-group" id="header">
-                    <input type="text" class="form-control" placeholder="Search By Project Name, Type, or Keyword">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary">Search</button>
-                    </div>
+                    <input type="text" class="form-control" id="search" placeholder="Search By Project Name, Type, or Keyword">
                 </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Filter By
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Project Name</a>
-                            <a class="dropdown-item" href="#">Date</a>
-                        </div>
-                    </div>
-            </div>-->
+
+            </div>
 
             <!-- projects -->
             <!-- row 1 -->
-            <div class="row">
+            <!--<div class="row">-->
+            <ul class="row list-unstyled">
 
                 <!-- surve modal -->
-                <div class="col-md-4 col-sm-12">
+                <li class="col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#surveModal">
                         <img class="card-img-top" src="img/surve/surve4.jpg">
                         <div class="card-body">
                             <h4 class="card-title">Surve</h4>
-                            <!--<p class="cardTags">Project Tags</p>-->
+                            <!--<small class="text-muted">#iOS, #android, #mobile</small>-->
                         </div>
                     </div>
-                </div>      <!-- ./ end surve modal -->
+                </li>      <!-- ./ end surve modal -->
 
                 <!-- urwic modal -->
-                <div class="col-md-4 col-sm-12">
+                <li class="col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#urwicModal">
                         <img class="card-img-top" src="img/urwic/urwicLogo.png">
                         <div class="card-body">
@@ -171,10 +161,10 @@
                             <!--<p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
-                </div>      <!-- ./ end urwic modal -->
+                </li>      <!-- ./ end urwic modal -->
 
                 <!-- merritt modal -->
-                <div class="col-md-4 col-sm-12">
+                <li class="col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#merrittModal">
                         <img class="card-img-top" src="img/merritt/logo.png">
                         <div class="card-body">
@@ -182,15 +172,10 @@
                             <!--<p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
-                </div>      <!-- ./ end merritt modal -->
-            </div>
-            <!-- ./ end row 1 -->
-                
-            <!-- row 2 -->
-            <div class="row">
+                </li>      <!-- ./ end merritt modal -->
 
                 <!-- mood modal -->
-                <div class="col-md-4 col-sm-12">
+                <li class="col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#moodModal">
                         <img class="card-img-top" src="img/moodLogo.png">
                         <div class="card-body">
@@ -199,10 +184,10 @@
                             <p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
-                </div>      <!-- ./ end mood modal -->
+                </li>      <!-- ./ end mood modal -->
             
                 <!-- JJ modal -->
-                <div class="col-md-4 project col-sm-12">
+                <li class="col-md-4 project col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#jjModal">
                         <img class="card-img-top" src="img/jj/jjLogo.jpeg">
                         <div class="card-body">
@@ -210,9 +195,9 @@
                             <!--<p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
-                </div>      <!-- ./ end JJ modal -->
+                </li>      <!-- ./ end JJ modal -->
 
-                <div class="col-md-4 col-sm-12">
+                <li class="col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#lucasModal">
                         <img class="card-img-top" src="img/lucas/lucasLogo.jpg">
                         <div class="card-body">
@@ -220,8 +205,11 @@
                             <!--<p class="cardTags">Project Tags</p>-->
                         </div>
                     </div>
-                </div>
-            </div>      <!-- ./end row 2 -->
+                </li>
+            </ul>
+            <!-- ./ end row 1 -->
+                
+            
         
             <!-- social media footer -->
             <footer class="footer mt-auto">

@@ -83,29 +83,17 @@
                 border-color: none;
             }
 
-            /*.wrapper{
-                display: flex;
-        flex-wrap: wrap;
-            }*/
-
         </style>
     </head>
 
     <script>
         $(function() {
             $('#search').keyup(function (){
-                //$('.card').removeClass('d-none');
                 $('.col-sm-12').removeClass('d-none');
                 $('.col-md-4').removeClass('d-none');
                 var filter = $(this).val(); // get the value of the input, which we filter on
                 $('.list-unstyled').find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().parent().addClass('d-none');
             });
-
-            /*$('#btnSort').click(function (){
-                $('.card-deck .card').sort(function(a,b) {
-                    return $(a).find(".card-title").text() > $(b).find(".card-title").text() ? 1 : -1;
-                });
-            });*/
         });
     </script>
     
@@ -138,13 +126,11 @@
         <div class="container">
             <div class="row">
             	<div class="input-group" id="header">
-                    <input type="text" class="form-control" id="search" placeholder="Search By Project Name, Type, or Keyword">
+                    <input type="text" class="form-control" id="search" placeholder="Search By Project Name">
                 </div>
-
             </div>
 
             <!-- projects -->
-            <!-- row 1 -->
             <ul class="row list-unstyled">
                 <!-- surve modal -->
                 <li class="col-md-4 col-sm-12">
@@ -212,9 +198,6 @@
                     </div>
                 </li>
             </ul>
-            <!-- ./ end row 1 -->
-                
-            
         
             <!-- social media footer -->
             <footer class="footer mt-auto">

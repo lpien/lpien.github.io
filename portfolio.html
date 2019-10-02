@@ -57,6 +57,7 @@
                 height:300px;
                 z-index: 2;
                 background-size: cover;
+                position:relative;
             }
 
             .modal-content {
@@ -88,12 +89,19 @@
 
     <script>
         $(function() {
+
+            // project search feature
             $('#search').keyup(function (){
                 $('.col-sm-12').removeClass('d-none');
                 $('.col-md-4').removeClass('d-none');
                 var filter = $(this).val(); // get the value of the input, which we filter on
                 $('.list-unstyled').find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().parent().addClass('d-none');
             });
+
+            // get current year copyright 
+            var currentYear = (new Date).getFullYear();
+            $('#year').text(currentYear);
+            
         });
     </script>
     
@@ -204,23 +212,23 @@
                 <div class="four">
                     <div class="row" style="padding-top: 10%; margin: 0 auto;">
                         <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
-                            <a href="https://github.com/lpien" target="_blank"><img class="icons" id="github" src="img/github.png" onmouseover="this.src='img/github_hover.png'" onmouseout="this.src='img/github.png'"></a>
+                            <a href="https://github.com/lpien" target="_blank"><img class="icons" id="github" src="img/icons/github.png" onmouseover="this.src='img/icons/github_hover.png'" onmouseout="this.src='img/icons/github.png'"></a>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/linkedin.png" onmouseover="this.src='img/linkedin_hover.png'" onmouseout="this.src='img/linkedin.png'"></a>
+                            <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/icons/linkedin.png" onmouseover="this.src='img/icons/linkedin_hover.png'" onmouseout="this.src='img/icons/linkedin.png'"></a>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/spotify.png" onmouseover="this.src='img/spotify_hover.png'" onmouseout="this.src='img/spotify.png'"></a>
+                            <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/icons/spotify.png" onmouseover="this.src='img/icons/spotify_hover.png'" onmouseout="this.src='img/icons/spotify.png'"></a>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/instagram.png" onmouseover="this.src='img/instagram_hover.png'" onmouseout="this.src='img/instagram.png'"></a>
+                            <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/icons/instagram.png" onmouseover="this.src='img/icons/instagram_hover.png'" onmouseout="this.src='img/icons/instagram.png'"></a>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/twitter.png" onmouseover="this.src='img/twitter_hover.png'" onmouseout="this.src='img/twitter.png'"></a>
+                            <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/icons/twitter.png" onmouseover="this.src='img/icons/twitter_hover.png'" onmouseout="this.src='img/icons/twitter.png'"></a>
                         </div>
                     </div>
-                    <div class="container text-center">
-                      <small>Copyright &copy; Your Website</small>
+                    <div class="foot text-center">
+                      <small style="color: #fff;">Copyright <span id="year"></span> &copy; Lauren Pien</small>
                     </div>
                 </div>
             </footer>      <!-- ./ end social media footer -->

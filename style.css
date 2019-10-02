@@ -37,6 +37,16 @@ li.active{
 	margin: 0 auto;
 }
 
+.foot{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+small{
+	font-family: 'Noto Serif', Serif;
+}
+
 @media (min-width: 990px){
 	.col-md-4 {
 	    -webkit-box-flex: 0;

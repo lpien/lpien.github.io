@@ -20,6 +20,12 @@
         	$(window).scroll(function(){
                 $(".titleText").css("opacity", 1 - $(window).scrollTop() / 300);
             });
+
+            // get current year copyright 
+            $(document).ready(function(){
+                var currentYear = (new Date).getFullYear();
+                $('#year').text(currentYear);
+            });
         </script>
         
         <style>
@@ -59,6 +65,7 @@
 				height:300px;
 				z-index: 2;
 				background-size: cover;
+                position:relative;
 			}
 
 			.titleText{
@@ -306,7 +313,7 @@
                 </div>-->
         		<ul class="timeline">
                     <li>
-                        <div class="timeline-badge"><img src="img/ball.png" class="badge-icon"></div>
+                        <div class="timeline-badge"><img src="img/icons/ball.png" class="badge-icon"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Soccer Coach<br><span class="text-muted" style="font-size:18px;">Livermore Fusion SC</span></h4>
@@ -318,7 +325,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-badge"><img src="img/graphicDesign.png" class="badge-icon"></div>
+                        <div class="timeline-badge"><img src="img/icons/graphicDesign.png" class="badge-icon"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Graphic Designer<br><span class="text-muted" style="font-size:18px;">Lucas Sports</span></h4>
@@ -330,7 +337,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-badge"><img src="img/whistle.png" class="badge-icon"></div>
+                        <div class="timeline-badge"><img src="img/icons/whistle.png" class="badge-icon"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Soccer Coach<br><span class="text-muted" style="font-size:18px;">Moreau Catholic High School</span></h4>
@@ -342,7 +349,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-badge"><img src="img/field.png" class="badge-icon"></div>
+                        <div class="timeline-badge"><img src="img/icons/field.png" class="badge-icon"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Soccer Coach<br><span class="text-muted" style="font-size:18px;">Girls Leading Girls</span></h4>
@@ -354,7 +361,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-badge"><img src="img/analysis.png" class="badge-icon"></div>
+                        <div class="timeline-badge"><img src="img/icons/analysis.png" class="badge-icon"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Analyst<br><span class="text-muted" style="font-size:18px;">Kaiser Permanente</span></h4>
@@ -366,7 +373,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-badge"><img src="img/mobile.png" class="badge-icon"></div>
+                        <div class="timeline-badge"><img src="img/icons/mobile.png" class="badge-icon"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Mobile Application Developer<br><span class="text-muted" style="font-size:18px;">University of Rochester School of Nursing</span></h4>
@@ -378,7 +385,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-badge"><img src="img/comms.png" class="badge-icon"></div>
+                        <div class="timeline-badge"><img src="img/icons/comms.png" class="badge-icon"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Director of Communications<br><span class="text-muted" style="font-size:18px;">GR Soccer</span></h4>
@@ -390,7 +397,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-badge"><img src="img/developer.png" class="badge-icon"></div>
+                        <div class="timeline-badge"><img src="img/icons/developer.png" class="badge-icon"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Web Developer<br><span class="text-muted" style="font-size:18px;">YPC Media</span></h4>
@@ -402,7 +409,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-badge"><img src="img/terminal.png" class="badge-icon"></div>
+                        <div class="timeline-badge"><img src="img/icons/terminal.png" class="badge-icon"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Web Developer<br><span class="text-muted" style="font-size:18px;">University of Rochester Women In Computing</span></h4>
@@ -420,22 +427,22 @@
                 <div class="four">
                     <div class="row" style="padding-top: 10%; margin: 0 auto;">
                         <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
-                            <a href="https://github.com/lpien" target="_blank"><img class="icons" id="github" src="img/github.png" onmouseover="this.src='img/github_hover.png'" onmouseout="this.src='img/github.png'"></a>
+                            <a href="https://github.com/lpien" target="_blank"><img class="icons" id="github" src="img/icons/github.png" onmouseover="this.src='img/icons/github_hover.png'" onmouseout="this.src='img/icons/github.png'"></a>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/linkedin.png" onmouseover="this.src='img/linkedin_hover.png'" onmouseout="this.src='img/linkedin.png'"></a>
+                            <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/icons/linkedin.png" onmouseover="this.src='img/icons/linkedin_hover.png'" onmouseout="this.src='img/icons/linkedin.png'"></a>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/spotify.png" onmouseover="this.src='img/spotify_hover.png'" onmouseout="this.src='img/spotify.png'"></a>
+                            <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/icons/spotify.png" onmouseover="this.src='img/icons/spotify_hover.png'" onmouseout="this.src='img/icons/spotify.png'"></a>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/instagram.png" onmouseover="this.src='img/instagram_hover.png'" onmouseout="this.src='img/instagram.png'"></a>
+                            <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/icons/instagram.png" onmouseover="this.src='img/icons/instagram_hover.png'" onmouseout="this.src='img/icons/instagram.png'"></a>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/twitter.png" onmouseover="this.src='img/twitter_hover.png'" onmouseout="this.src='img/twitter.png'"></a>
+                            <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/icons/twitter.png" onmouseover="this.src='img/icons/twitter_hover.png'" onmouseout="this.src='img/icons/twitter.png'"></a>
                         </div>
                     </div>
-                    <div class="container text-center">
+                    <div class="foot text-center">
                       <small style="color: #fff;">Copyright <span id="year"></span> &copy; Lauren Pien</small>
                     </div>
                 </div>

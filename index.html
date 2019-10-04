@@ -19,6 +19,8 @@
             // text fades on scroll
         	$(window).scroll(function(){
                 $(".titleText").css("opacity", 1 - $(window).scrollTop() / 300);
+                $("#bay").css("opacity", 4 - $(window).scrollTop() / 250);
+                $(".bio").css("opacity", 4 - $(window).scrollTop() / 250);
             });
 
             // get current year copyright 
@@ -51,6 +53,8 @@
 				z-index: 1;
 				background-size: cover;
 				overflow-x: hidden;
+                position: sticky;
+                top: 0;
 			}
 
 			.three{
@@ -58,6 +62,8 @@
 				height:auto;
 				z-index: 2;
                 display: flow-root;
+                position: sticky;
+                top: 0;
 			}
 
 			.four{
@@ -289,7 +295,7 @@
         		<div class="row">
         			<div class="col-lg-2 col-md-1 col-sm-0"></div>
         			<div class="col-lg-3 col-md-3 col-sm-4">
-        				<img src="img/bay.png" class="center-block img-responsive" style="width: 200; margin-top: 60%;">
+        				<img src="img/bay.png" class="center-block img-responsive" id="bay" style="width: 200; margin-top: 60%;">
         			</div>
         			<div class="col-lg-5 col-md-7 col-sm-8">
         				<p class="bio">I went to school at the University of Rochester and studied Computer Science and Digital Media Studies. <br/><br/>Now I'm in the San Francisco Bay Area living the dream of being a freelance web developer and graphic designer, and coaching soccer</p>
@@ -421,9 +427,7 @@
                         </div>
                     </li>
                 </ul>
-        	</div>
-        	<!-- social media footer -->
-            <footer class="footer mt-auto">
+
                 <div class="four">
                     <div class="row" style="padding-top: 10%; margin: 0 auto;">
                         <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
@@ -446,7 +450,32 @@
                       <small style="color: #fff;">Copyright <span id="year"></span> &copy; Lauren Pien</small>
                     </div>
                 </div>
-            </footer>      <!-- ./ end social media footer -->
+        	</div>
+        	<!-- social media footer -->
+           <!--<footer class="footer mt-auto">
+                <div class="four">
+                    <div class="row" style="padding-top: 10%; margin: 0 auto;">
+                        <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-sm-offset-1">
+                            <a href="https://github.com/lpien" target="_blank"><img class="icons" id="github" src="img/icons/github.png" onmouseover="this.src='img/icons/github_hover.png'" onmouseout="this.src='img/icons/github.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://www.linkedin.com/in/lauren-pien-073091b6/" target="_blank"><img class="icons" src="img/icons/linkedin.png" onmouseover="this.src='img/icons/linkedin_hover.png'" onmouseout="this.src='img/icons/linkedin.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://open.spotify.com/user/lpien?si=kvhlzK5-RRean1Q5_ToSgQ" target="_blank"><img class="icons" src="img/icons/spotify.png" onmouseover="this.src='img/icons/spotify_hover.png'" onmouseout="this.src='img/icons/spotify.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://www.instagram.com/lpien/" target="_blank"><img class="icons" src="img/icons/instagram.png" onmouseover="this.src='img/icons/instagram_hover.png'" onmouseout="this.src='img/icons/instagram.png'"></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <a href="https://twitter.com/LaurenPien" target="_blank"><img class="icons" src="img/icons/twitter.png" onmouseover="this.src='img/icons/twitter_hover.png'" onmouseout="this.src='img/icons/twitter.png'"></a>
+                        </div>
+                    </div>
+                    <div class="foot text-center">
+                      <small style="color: #fff;">Copyright <span id="year"></span> &copy; Lauren Pien</small>
+                    </div>
+                </div>
+            </footer> -->     <!-- ./ end social media footer -->
         </div>
     </body>
 </html>

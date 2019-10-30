@@ -258,19 +258,19 @@
                 </div>
             </div>
 
-            <!-- clear tag button -->
+            <!-- tag buttons -->
             <ul class="row list-unstyled tagButtons" id="tagButtons">
                 <li class="tagButton" id="clearButton" onclick="clearFilters()">x Clear All Filters</li>
-                <li class="tagButton tag" id="ios">iOS</li>
-                <li class="tagButton tag" id="android">android</li>
-                <li class="tagButton tag" id="mobileApp">mobileApp</li>
-                <li class="tagButton tag" id="website">website</li>
-                <li class="tagButton tag" id="bootstrap">bootstrap</li>
-                <li class="tagButton tag" id="webDev">webDev</li>
-                <li class="tagButton tag" id="cms">CMS</li>
-                <li class="tagButton tag" id="wordpress">Wordpress</li>
-                <li class="tagButton tag" id="graphic">graphicDesign</li>
-                <li class="tagButton tag" id="photoshop">Photoshop</li>
+                <li class="tagButton tag" id="ios">#iOS</li>
+                <li class="tagButton tag" id="android">#android</li>
+                <li class="tagButton tag" id="mobileApp">#mobileApp</li>
+                <li class="tagButton tag" id="website">#website</li>
+                <li class="tagButton tag" id="bootstrap">#bootstrap</li>
+                <li class="tagButton tag" id="webDev">#webDev</li>
+                <li class="tagButton tag" id="cms">#CMS</li>
+                <li class="tagButton tag" id="wordpress">#Wordpress</li>
+                <li class="tagButton tag" id="graphic">#graphicDesign</li>
+                <li class="tagButton tag" id="photoshop">#photoshop</li>
             </ul>
 
             <!-- project cards -->
@@ -325,6 +325,22 @@
                         </div>
                     </div>
                 </li>      <!-- ./ end surve card -->
+
+                <!-- ypc card -->
+                <li class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="img/ypc/logo.png" data-toggle="modal" data-target="#ypcModal">
+                        <div class="card-body" data-toggle="modal" data-target="#surveModal">
+                            <h4 class="card-title">Yellow Page City</h4>
+                        </div>
+                        <div class="tags">
+                            <small class="text-muted">
+                                <span class="searchable graphic" onclick="filter('graphic')">#graphicDesign</span>, 
+                                <span class="searchable photoshop" onclick="filter('photoshop')">#photoshop</span>
+                            </small>
+                        </div>
+                    </div>
+                </li>      <!-- ./ end ypc card -->
 
                 <!-- urwic card -->
                 <li class="col-lg-3 col-md-4 col-sm-6">
@@ -471,16 +487,16 @@
                                     <div id="urwicCarousel" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img class="img-responsive" src="img/urwic/urwicLogoModal.png" alt="First slide">
+                                                <img class="img-responsive" src="img/urwic/urwicLogoModal.png" alt="First slide" height="500" width="600">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="img-responsive" src="img/urwic/about.png" alt="Second slide">
+                                                <img class="img-responsive" src="img/urwic/about.png" alt="Second slide" height="500" width="600">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="img-responsive" src="img/urwic/mission.png" alt="Third slide">
+                                                <img class="img-responsive" src="img/urwic/mission.png" alt="Third slide" height="500" width="600">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#urwicCarousel" role="button" data-slide="prev" style="color:#000;">
+                                        <a class="carousel-control-prev" href="#urwicCarousel" role="button" data-slide="prev">
                                             <span class="carouselCtrl"> < </span>
                                         </a>
                                         <a class="carousel-control-next" href="#urwicCarousel" role="button" data-slide="next">
@@ -518,7 +534,7 @@
                                     <div id="merrittCarousel" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img class="img-fluid" src="img/merritt/home.png" alt="First slide">
+                                                <img class="img-fluid" src="img/merritt/home.png" alt="First slide" height="500" width="600">
                                             </div>
                                         </div>
                                         <!--<a class="carousel-control-prev" href="#merrittCarousel" role="button" data-slide="prev" style="color:#000;">
@@ -559,10 +575,10 @@
                                     <div id="moodCarousel" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img class="img-responsive" src="img/mood/home.png" alt="First slide">
+                                                <img class="img-responsive" src="img/mood/home.png" alt="First slide" width="600" height="500">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="img-responsive" src="img/mood/contact.png" alt="Second slide">
+                                                <img class="img-responsive" src="img/mood/contact.png" alt="Second slide" width="600" height="500">
                                             </div>
                                         </div>
                                         <a class="carousel-control-prev" href="#moodCarousel" role="button" data-slide="prev" style="color:#000;">
@@ -601,16 +617,16 @@
                                     <div id="jjCarousel" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img class="img-responsive" src="img/jj/home.png" alt="First slide">
+                                                <img class="img-responsive" src="img/jj/home.png" alt="First slide" width="600" height="500">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="img-responsive" src="img/jj/order1.png" alt="Second slide">
+                                                <img class="img-responsive" src="img/jj/order1.png" alt="Second slide" width="600" height="500">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="img-responsive" src="img/jj/order.png" alt="Second slide">
+                                                <img class="img-responsive" src="img/jj/order.png" alt="third slide" width="600" height="500">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#jjCarousel" role="button" data-slide="prev" style="color:#000;">
+                                        <a class="carousel-control-prev" href="#jjCarousel" role="button" data-slide="prev">
                                             <span class="carouselCtrl"> < </span>
                                         </a>
                                         <a class="carousel-control-next" href="#jjCarousel" role="button" data-slide="next">
@@ -675,6 +691,46 @@
                 </div>
             </div>
         </div>      <!-- ./ end lucas modal content -->
+
+        <!-- ypc modal content -->
+        <div class="modal fade" id="ypcModal" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modal-lg">
+                    <div class="modal-header">
+                        <h5>Yellow Page City</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="slides" id="ypcImages">
+                                    <div id="ypcCarousel" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid" src="img/ypc/twitterbanner.png" alt="First slide" height="500" width="600">
+                                            </div>
+                                        </div>
+                                        <!--<a class="carousel-control-prev" href="#merrittCarousel" role="button" data-slide="prev" style="color:#000;">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true" style="color:#000;"></span>
+                                            <span class="sr-only" style="color:#000;">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#merrittCarousel" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <p>Twitter and Facebook banner made using Photoshop</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      <!-- ./ end ypc modal content -->
 
     </body>
 </html>
